@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render expense summery with filters 1`] = `
+<div>
+  <p>
+    Viewing 
+    1
+     
+    expense
+     totaling 
+    $2.00
+  </p>
+</div>
+`;
+
+exports[`should render expense summery with no filters 1`] = `
+<div>
+  <p>
+    Viewing 
+    3
+     
+    expenses
+     totaling 
+    $28.40
+  </p>
+</div>
+`;

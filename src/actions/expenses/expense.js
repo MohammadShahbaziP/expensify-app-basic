@@ -18,7 +18,7 @@ const addExpense = (
             id: uuid(),
             description,
             note,
-            amount,
+            amount :amount / 100,
             createdAt
         }
     })
