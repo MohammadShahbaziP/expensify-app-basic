@@ -73,3 +73,12 @@ test('should add undefined Edit expense',()=>{
     expect(state).toEqual(expenses)
 
 })
+test('should set expenses',()=>{
+    const expenses=expenses
+    const action={
+        type:'SET_EXPENSES',
+        expenses
+    }
+    const state=expenseReducer(undefined, action)
+    expect(state).toEqual(expenses)
+})
