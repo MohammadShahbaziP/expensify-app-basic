@@ -4,10 +4,17 @@ import ExpenseListItem from './ExpenseListItem'
 import getVisibleExpense from '../selectors/getVisiblestate'
 
 export const ExpenseList = ({expenses})=>(
-    <div>
+    <div className="container">
+        <div className="list-header">
+            <div className="show-for-mobile">Expenses</div>
+            <div className="show-for-desktop">Expenses</div>
+            <div className="show-for-desktop">Amount</div>
+        </div>
 
         {expenses.length === 0 ? (
-            <p>No expenses</p>
+            <div className="list-item list-item--message">
+                <p>No expenses</p>
+            </div>
         ) : (
            
              expenses.map((expense)=>(

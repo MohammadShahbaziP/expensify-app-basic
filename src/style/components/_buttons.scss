@@ -1,0 +1,33 @@
+.btn{
+    border:none;
+    padding: $s-size $m-size;
+    font-weight: 500;
+    font-size: 1.8rem;
+    background: transparent;
+    display: inline-block;
+    color:white;
+    transition:all .2s;
+    -webkit-transition:all .2s;
+    -moz-transition:all .2s;
+    -ms-transition:all .2s;
+    -o-transition:all .2s;
+    &:link,
+    &:visited{
+        text-decoration: none;
+        
+    }
+    &--secondary{
+        background-color: $secondary;
+
+        &:hover{
+            background-color: lighten( $secondary , 6%) ;
+        }
+
+    }
+    &--danger{
+        background-color:$gray;
+        &:hover{
+            background-color: lighten($gray , 10%);
+        }
+    }
+}

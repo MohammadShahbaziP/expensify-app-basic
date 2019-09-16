@@ -1,0 +1,8 @@
+.loader{
+    height: 100vh;
+
+    @include flex-center;
+    img{
+        width: 6rem;
+    }
+}

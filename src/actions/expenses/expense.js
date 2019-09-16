@@ -1,4 +1,4 @@
-import uuid from 'uuid'
+
 import database from '../../firebase/firebase'
 
 const removeExpense = ({id} = {})=>({

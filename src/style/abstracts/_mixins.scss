@@ -1,0 +1,19 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@mixin respond($break-point) {
+    @if $break-point == 'phone' {
+        @media (max-width:$desktop-breakpoint) {
+            @content;
+        }
+    }@else if  $break-point == 'desktop' {
+        @media (min-width:$desktop-breakpoint) {
+            @content;
+        }
+    };
+    
+}

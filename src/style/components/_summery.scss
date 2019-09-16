@@ -1,0 +1,15 @@
+.summery{
+    background-color: $off-white;
+    padding: $m-size 0;
+    margin-bottom: $m-size;
+    &__title{
+        font-weight: 100;
+        span{
+            font-weight: bold;
+        }
+    }
+    &__actions{
+        margin-top: $m-size;
+    }
+
+}

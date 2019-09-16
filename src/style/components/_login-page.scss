@@ -1,0 +1,25 @@
+.login-page{
+    background: url('/images/bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    width:100vw;
+    @include flex-center;
+   
+    &__box{
+        background: fade-out(white, .15) ;
+        border-radius:3px;
+        padding:$l-size $m-size;
+        text-align: center;
+        width: 25rem;
+        -webkit-border-radius:3px;
+        -moz-border-radius:3px;
+        -ms-border-radius:3px;
+        -o-border-radius:3px;
+}
+    &__title{
+        line-height:1rem;
+        margin: 0 0 $l-size 0;
+
+
+    }
+}

@@ -9,6 +9,7 @@ import './style/style.scss'
 import 'react-dates/lib/css/_datepicker.css'
 import { firebase } from './firebase/firebase'
 import { login, logout } from './actions/auth';
+import Loader from './components/loader'
 const store = configStore()
 
 const jsx = (
@@ -23,7 +24,7 @@ const renderApp=()=>{
         isRendered=true
     }
 }
-ReactDOM.render(<p>loading...</p>, document.getElementById('app'))
+ReactDOM.render(<Loader />, document.getElementById('app'))
 
 
 firebase.auth().onAuthStateChanged((user) => {
@@ -44,3 +45,4 @@ firebase.auth().onAuthStateChanged((user) => {
 
     }
 })
+
