@@ -4,6 +4,9 @@
     padding: $s-size;
     font-size:1.8rem;
     font-weight: 300;
+    @include respond('phone'){
+        width: 100%;
+    }
 }
 .select{
     @extend .text-input;
